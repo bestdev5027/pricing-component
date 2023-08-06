@@ -1,0 +1,648 @@
+
+/* The above code is a CSS code snippet that sets the margin and padding of all elements to 0 and uses
+the border-box box-sizing model. This means that the margin and padding will not add any extra space
+to the elements and the total width and height of an element will include the content, padding, and
+border. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* The above code is defining the CSS styles for the body element. */
+body{
+    background-color: whitesmoke;
+    background-image: url(img/bg-top.svg), url(img/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    background-size: 300px, 300px;
+    min-height: 100vh;
+    display:grid;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    align-content: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+header{
+    margin-bottom: 20px;
+    
+  }
+
+  main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    margin-top: 0;
+    
+  }
+
+
+body .head{
+    margin-top: 35px;
+    padding-top: 0;
+    text-align: center;
+    font-size: 10px;
+    
+}
+h3{
+    color: hsl(228, 48%, 39%);
+    font-size: 40px;
+}
+/* The `.range` CSS code is targeting an element with the class "range" and setting the following
+styles for that element: */
+.range{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px;
+    place-content: center;
+    
+}
+
+/* The CSS code `main .basic` is targeting an element with the class "basic" that is a descendant of
+the `<main>` element. It sets the following styles for that element: */
+main .basic{
+    
+    background-color: #fff;
+    border-radius: 15px;
+    height: 70vh;
+    width: 25vw;
+    padding: 15px;
+    margin-top: 8px;
+}
+
+
+main p.bc{
+    font-size: 25px;
+}
+
+.basic p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+main p.money{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+main .highlight{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+a{
+    background-color: hsl(228, 48%, 39%);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+        
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 10px;    
+   
+}
+/* The above code is defining a CSS rule for a class called "professional" that is nested inside a
+<main> element. */
+main .professional{
+    
+    background-color: hsl(236, 52%, 64%);         
+    border-radius: 15px;
+    height: 75vh;
+    width: 25vw;
+    padding: 20px;
+    margin-top: 10px;   
+}
+.learn{
+    margin-top: 25px;
+    margin-bottom: 4px;
+}
+
+.professional p{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.professional a{
+    background-color: #fff;
+    color: hsl(228, 54%, 35%);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+        
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
+    border-radius: 10px;    
+        
+}
+.am{
+    color: hsl(227, 28%, 71%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:  hsl(228, 45%, 44%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px  hsl(228, 45%, 44%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  
+
+  /* || MOBILE DEVIC */
+@media screen and (max-width: 481px) {
+    body{
+        background-color: whitesmoke;
+        background-image: url(img/bg-top.svg);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        min-height: 150vh;
+        display:grid;
+        justify-content: center;
+        place-content: center;
+        align-items: center;
+        align-content: center;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    
+    body .head{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 10px;
+        }
+    h3{
+        color: hsl(228, 48%, 39%);
+        font-size: 20px;
+        
+        }
+        .am{
+            color: hsl(227, 28%, 71%);
+            font-weight: bold;
+            font-size: 8px
+        }
+        .range{
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            place-content: center;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 15px;
+          }
+          
+          
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+                   
+          input:checked + .slider:before {
+            -webkit-transform: translateX(13px);
+            -ms-transform: translateX(13px);
+            transform: translateX(13px);
+          }
+          
+          
+          header{
+            margin-bottom: 35px;
+          }
+          main{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            place-content: center;
+          }
+          main .basic{
+            background-color: #fff;
+            border-radius: 20px;
+            height: 53vh;
+            width: 80vw;
+            padding: 1rem;
+            margin-bottom: 30px;
+            
+        }
+        
+        main p.bc{
+            font-size: 20px;
+        }
+        
+        .basic p{
+            padding-top: 12px;
+            padding-bottom: 10px;    
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .money{
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            place-content: center;
+            font-size: 10px;
+            font-weight: bolder;
+        }
+        main .highlight{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        a{
+            background-color: hsl(228, 48%, 39%);
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 8px;
+            
+            margin-bottom: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            border-radius: 5px;    
+           
+        }
+        main .professional{
+            background-color: hsl(236, 52%, 64%);         
+            border-radius: 20px;
+            height: 55vh;
+            width: 80vw;
+            padding: 1rem;
+            margin-bottom: 30px  
+        
+        }
+        .learn {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .professional p{
+          padding-top: 12px;
+          padding-bottom: 10px;           
+          text-align: center;
+          font-weight: bold;
+          font-size: 12px;
+          color: #fff;
+        }
+        
+        .highlight{
+            font-size: 200px;
+            font-weight: bold;
+        }
+        .professional a{
+            background-color: #fff;
+            color: hsl(228, 54%, 35%);
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            border-radius: 5px;    
+         }
+     
+        
+    
+}
+
+/* || MEDIUM TAB & IPAD*/
+@media screen and (min-width: 768px) {
+    body{
+        background-color: whitesmoke;
+        background-image: url(img/bg-top.svg);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        min-height: 100vh;
+        display:grid;
+        justify-content: center;
+        place-content: center;
+        align-items: center;
+        align-content: center;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        main p.money{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    place-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+main .highlight{
+    font-size: 45px;
+    font-weight: bold;
+}
+main .basic{
+    
+  background-color: #fff;
+  border-radius: 15px;
+  height: 40vh;
+  width: 30vw;
+  padding: 15px;
+  margin-top: 8px;
+}
+main .professional{
+    
+  background-color: hsl(236, 52%, 64%);         
+  border-radius: 15px;
+  height: 42vh;
+  width: 30vw;
+  padding: 20px;
+  margin-top: 10px;   
+}
+.professional a{
+  background-color: #fff;
+  color: hsl(228, 54%, 35%);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 63px;
+  padding-right: 63px;
+  border-radius: 10px;    
+      
+}
+a{
+  background-color: hsl(228, 48%, 39%);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;   
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 65px;
+  padding-right: 65px;
+  border-radius: 10px;    
+ 
+}
+
+
+
+   
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+   
+}
+/* || XL SCREEN */
+@media screen and (min-width: 1200px) {
+  body{
+    background-color: whitesmoke;
+    background-image: url(img/bg-top.svg), url(img/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    background-size: 300px, 300px;
+    min-height: 100vh;
+    display:grid;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    align-content: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+header{
+    margin-bottom: 50px;
+    
+  }
+
+  main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+  }
+
+
+body .head{
+    margin-top: 35px;
+    padding-top: 0;
+    text-align: center;
+    font-size: 10px;
+    
+}
+h3{
+    color: hsl(228, 48%, 39%);
+    font-size: 40px;
+}
+/* The `.range` CSS code is targeting an element with the class "range" and setting the following
+styles for that element: */
+.range{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px;
+    place-content: center;
+    
+}
+
+/* The CSS code `main .basic` is targeting an element with the class "basic" that is a descendant of
+the `<main>` element. It sets the following styles for that element: */
+main .basic{
+    
+    background-color: #fff;
+    border-radius: 15px;
+    height: 70vh;
+    width: 25vw;
+    padding: 15px;
+    margin-top: 8px;
+}
+
+
+main p.bc{
+    font-size: 25px;
+}
+
+.basic p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+main p.money{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+main .highlight{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+a{
+    background-color: hsl(228, 48%, 39%);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+        
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 10px;    
+   
+}
+main .professional{
+    
+    background-color: hsl(236, 52%, 64%);         
+    border-radius: 15px;
+    height: 75vh;
+    width: 25vw;
+    padding: 20px;
+    margin-top: 10px;   
+}
+.learn{
+    margin-top: 25px;
+    margin-bottom: 4px;
+}
+
+.professional p{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.professional a{
+    background-color: #fff;
+    color: hsl(228, 54%, 35%);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+        
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
+    border-radius: 10px;    
+        
+}
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+}
+
+
+ /* || MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+
+    }
+
+  
